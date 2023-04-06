@@ -1,0 +1,2 @@
+--Q10
+INSERT INTO persons (first_name, last_name, email, gender, title, age, address, city, state, postalcode, phone) VALUES ('Ling', 'Lee', 'ling10@uw.edu', 'Female', 'Ms', 22, '123 Sesame Street', 'Seattle', 'Washington', 98105, '206-123-4567');

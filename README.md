@@ -20,7 +20,7 @@ $ sqlite3 people.db
 This should bring back a command prompt similar to:
 
 ```
-sqlite> 
+sqlite>
 ```
 
 This is the SQLite prompt, and you are in the SQLite database.
@@ -35,13 +35,13 @@ If you forget the semicolon, SQLite will give you a continuation prompt:
 
 ```
 sqlite> SELECT * FROM persons
-   ...> 
+   ...>
 ```
 
 ... indicating it is still expecting more input. This allows you to spread a query out across multiple lines if you wish:
 
 ```
-sqlite> SELECT * 
+sqlite> SELECT *
    ...> FROM persons
    ...>
 ```
@@ -51,7 +51,7 @@ If that makes it easier to write. It's up to you.
 ## Controlling SQLite
 The easiest way to capture output from an interactive session like this is to issue a *SQLite command* at the SQLite prompt; these are commands to SQLite itself, rather than being a SQL query for SQLite to execute. One such command is to exit the SQLite tool: `.quit`. Another is `.help`, in case you forget some of these.
 
-Before you do too much, it's always helpful to copy the database to a backup, just in case: `.clone backup.db`. This will create a copy of the `people.db` file into a new file, `backup.db`. That way, if you do something that completely tosses your database, you can always quit SQLite, delete `people.db`, copy `backup.db` to `people.db`, and start fresh. 
+Before you do too much, it's always helpful to copy the database to a backup, just in case: `.clone backup.db`. This will create a copy of the `people.db` file into a new file, `backup.db`. That way, if you do something that completely tosses your database, you can always quit SQLite, delete `people.db`, copy `backup.db` to `people.db`, and start fresh.
 
 One command you may find useful is to change the way it displays results: `.mode`:
 
@@ -72,7 +72,7 @@ sqlite> select first_name, last_name from persons limit 10;
 | Fulton     | Klemensiewicz |
 | Wilhelm    | Beall         |
 +------------+---------------+
-sqlite> 
+sqlite>
 ```
 
 By default it will be in "list" mode ("`.mode list`"), which displays all output rows in comma-separated format--it's shorter, but it's harder to see which data appears in which columns.
